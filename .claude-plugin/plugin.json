@@ -1,0 +1,13 @@
+{
+  "name": "claud18code",
+  "version": "1.0.0",
+  "description": "Stop managing your AI. Start building. Behavior rules + project memory + git workflow for Claude Code.",
+  "author": {
+    "name": "champ18ion",
+    "url": "https://github.com/champ18ion"
+  },
+  "homepage": "https://github.com/champ18ion/claud18code",
+  "repository": "https://github.com/champ18ion/claud18code",
+  "license": "MIT",
+  "keywords": ["workflow", "git", "productivity", "developer-tools", "project-memory", "claude-code"]
+}
