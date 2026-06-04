@@ -1,0 +1,14 @@
+{
+  "name": "claud18code",
+  "description": "Behavior rules, project memory, and a full git workflow for Claude Code.",
+  "plugins": [
+    {
+      "name": "claud18code",
+      "description": "Stop managing your AI. Start building. Behavior rules + project memory + git workflow for Claude Code.",
+      "source": {
+        "type": "github",
+        "repo": "champ18ion/claud18code"
+      }
+    }
+  ]
+}
