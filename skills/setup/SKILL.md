@@ -57,7 +57,11 @@ Ask these 5 questions one at a time. Wait for each answer before asking the next
 
 ### CLAUDE.md
 Check if CLAUDE.md exists in the project root.
-If it does NOT exist, write it with this exact content:
+
+If it does NOT exist, write it with this exact content.
+
+If it DOES exist, check if it contains the section "## Developer Is in Charge".
+If that section is missing, append the following to the end of their existing CLAUDE.md — do not touch anything above it:
 
 ```
 # Rules
@@ -107,7 +111,7 @@ If it does NOT exist, write it with this exact content:
 - Read files on demand — never speculatively.
 ```
 
-If CLAUDE.md already exists, leave it completely untouched.
+If CLAUDE.md exists and already contains "## Developer Is in Charge", leave it completely untouched.
 
 ### .project.md
 Write only what cannot be derived from reading the code.
