@@ -41,5 +41,13 @@
 ## Context
 
 - Never auto-read project files at session start.
-- Load .project.md only when running /plan, /ship, or /sync.
+- Load .project.md only when a skill explicitly needs it. Never preload it.
 - Read files on demand — never speculatively.
+
+## UI
+
+- Before writing any UI: ask what it should feel like. Never guess aesthetic direction.
+- No AI defaults: no Inter, no purple gradients, no three-equal-cards, no div-fake-screenshots.
+- Pick a direction and commit: brutally minimal, editorial, dense-data, retro, etc.
+- Real copy only. No "Lorem ipsum", no "Title here", no "Description goes here".
+- One accent color. One font family. One corner-radius system. No mixing.
