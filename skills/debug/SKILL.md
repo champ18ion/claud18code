@@ -1,6 +1,6 @@
 ---
 name: debug
-description: Structured root cause analysis. One hypothesis at a time. No fixes until cause is confirmed.
+description: Use when the user reports a bug, unexpected behavior, or something broken. Trigger on: "it's not working", "something's wrong", "this is broken", "why is this happening", "I'm getting an error", "it was working before".
 disable-model-invocation: true
 ---
 

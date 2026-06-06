@@ -1,6 +1,6 @@
 ---
 name: ship
-description: Full git workflow — branch check, conflict resolution, security scan, commit, PR.
+description: Use when the user wants to commit, push, create a PR, or ship a feature. Trigger on phrases like "ship it", "push this", "make a PR", "commit and push", "I'm done", "ready to merge", "resolve this conflict".
 disable-model-invocation: true
 ---
 

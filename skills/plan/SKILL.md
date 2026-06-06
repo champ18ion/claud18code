@@ -1,6 +1,6 @@
 ---
 name: plan
-description: Break a task into atomic steps with verify conditions. Waits for approval before anything is executed.
+description: Use when the user wants to start a new feature, task, or anything touching multiple files. Trigger on: "let's build", "I want to add", "help me implement", "how should we approach", "let's start on", "I need to create".
 disable-model-invocation: true
 ---
 

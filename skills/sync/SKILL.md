@@ -1,6 +1,6 @@
 ---
 name: sync
-description: Update .project.md at end of session. Keeps project brain current.
+description: Use when the user is wrapping up a session or wants to save progress. Trigger on: "we're done for now", "let's stop here", "save progress", "end of session", "pick this up later", "wrap up".
 disable-model-invocation: true
 ---
 

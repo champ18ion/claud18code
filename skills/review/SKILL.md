@@ -1,6 +1,6 @@
 ---
 name: review
-description: Context-aware code review checked against project constraints and past decisions.
+description: Use when the user wants code reviewed before merging. Trigger on: "review this", "check this code", "is this good to merge", "look at my changes", "any issues with this", "LGTM?".
 disable-model-invocation: true
 ---
 
