@@ -54,6 +54,7 @@ skills/                   ← slash commands inside Claude Code
   ├── /ship               ← branch check → conflicts → security → commit → PR
   ├── /review             ← code review against your project's constraints
   ├── /debug              ← root cause before any fix is attempted
+  ├── /ui                 ← interface + aesthetic direction, approved before code
   └── /sync               ← end-of-session brain update
 hooks/
   └── session-start.sh    ← shows project state at every session open. Automatic.
@@ -117,8 +118,9 @@ No lock-in. No tooling. Just a file you own.
 
 ## Install
 
-```bash
-claude plugin install claud18code
+```
+/plugin marketplace add champ18ion/claud18code
+/plugin install claud18code@champ18ion/claud18code
 ```
 
 Then open your project in Claude Code and type `/setup`.
@@ -143,6 +145,7 @@ Every task        →  /plan    steps defined, you approve, then Claude executes
 Every commit/PR   →  /ship    full git workflow, you make every decision
 Any bug           →  /debug   hypothesis first, root cause confirmed, then fix
 Code review       →  /review  critical issues flagged, nothing padded
+Any UI work       →  /ui      design read + memorable detail approved before code
 End of session    →  /sync    brain updated, project state preserved
 ```
 

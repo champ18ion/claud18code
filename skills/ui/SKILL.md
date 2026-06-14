@@ -43,6 +43,20 @@ If the brief is too vague to infer a direction, ask ONE question: "What should t
 
 Pick one and commit. Never "clean and modern."
 
+**If the product type gives a hint, use it to inform — not replace — the offered options:**
+
+| Product type | Tends toward |
+|---|---|
+| Internal tool / admin / dashboard | Dense-data, brutally minimal |
+| SaaS / fintech | Premium/refined |
+| Portfolio / agency | Editorial, brutalist |
+| Consumer / social | Playful |
+| Dev tool / CLI / docs | Dark tech, brutally minimal |
+
+Still the developer's call — this only shapes which 3 options you offer.
+
+**Then name the one memorable thing.** Add a second line: "The one thing someone will remember: <one detail>." A bold type moment, an unusual layout choice, a single well-placed animation — one deliberate thing, not a list. This gets approved alongside the Design Read.
+
 ---
 
 ## Step 3: Define the interface
@@ -88,18 +102,24 @@ Only after approval. Apply these rules throughout.
 - Pair: display font + mono font. Example: Satoshi + JetBrains Mono
 - Display headlines: `text-4xl md:text-6xl tracking-tighter leading-none`
 - Body: `text-base leading-relaxed max-w-[65ch]`
+- Type scale (base 16px): 12 / 14 / 16 / 18 / 24 / 32 / 48 / 64
+- Weight: 600-700 headings, 400 body, 500 labels/buttons
+- Line-height: 1.5-1.75 body, tighter (1.1-1.2) for display
 
 ### Color
 - Max 1 accent color. No AI-purple gradients by default.
 - Neutral base (Zinc/Slate/Stone) + single sharp accent (Emerald, Electric Blue, Deep Rose, Burnt Orange)
+- Use semantic tokens, not raw hex in components: `primary`, `accent`, `surface`, `on-surface`, `error`, `success`
 - CSS variables for consistency. One palette locked for the whole page.
 - No pure `#000000` or `#ffffff` — use off-black (zinc-950) and off-white
+- Contrast: body text ≥ 4.5:1 (WCAG AA), large/display text ≥ 3:1
 
 ### Layout
 - Grid over flex-math. Never `w-[calc(33%-1rem)]` — use `grid-cols-3 gap-6`
 - Full-height: `min-h-[100dvh]` — NEVER `h-screen` (breaks iOS Safari)
 - Breakpoints: sm:640, md:768, lg:1024, xl:1280. Contain at `max-w-7xl mx-auto`
 - Every multi-column layout must declare its `< 768px` mobile collapse
+- Reach beyond the default centered-card-grid. Consider: asymmetric split, overlap, bento grid, diagonal flow, generous negative space. Pick what fits the "one memorable thing" from Step 2.
 
 ### Icons
 - Priority: `@phosphor-icons/react` → `hugeicons-react` → `@radix-ui/react-icons` → `@tabler/icons-react`
@@ -125,6 +145,10 @@ Only after approval. Apply these rules throughout.
 
 ### Motion
 - Animate only `transform` and `opacity`. Never `top`, `left`, `width`, `height`
+- Tie intensity to the aesthetic direction:
+  - Brutally minimal / brutalist: none beyond `:hover`/`:active`
+  - Editorial / dense-data: subtle, functional only
+  - Premium / playful / dark tech: one staggered page-load reveal + hover feedback (`scale` / `-translate-y` on interactive elements)
 - One well-orchestrated page-load reveal > scattered micro-interactions
 - Every animation needs a reason: hierarchy, feedback, storytelling, or state change
 - `prefers-reduced-motion` respected for anything that moves
